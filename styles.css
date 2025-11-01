@@ -1,0 +1,99 @@
+body {
+    max-width: 100dvw;
+    overflow-x: hidden;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navtop {
+    justify-self: center;
+    border-radius: 30px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.5);
+    width: 75%;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    transition: height 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: space-between;
+    background-color:rgb(232, 228, 255);
+    font-weight: bold; 
+}
+
+.navtop:hover {
+    height: 80px;
+    background-color: rgb(200, 195, 255);
+}
+
+.navtop a {
+    color: rgb(22, 0, 83);
+    text-decoration: none;
+    font-size: 20px;
+    transition: padding 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.navtop a:hover {
+    padding: 10px 15px;
+    background-color: rgb(177, 171, 255);
+    border-radius: 15px;
+}
+
+.navtopdebug {
+    justify-self: center;
+    border-radius: 30px;
+    margin-top: -130px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.5);
+    width: 75%;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    transition: height 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: space-between;
+    background-color:rgb(232, 228, 255);
+    font-weight: bold; 
+}
+
+.navtopdebug:hover {
+    height: 80px;
+    background-color: rgb(200, 195, 255);
+}
+
+.navtopdebug a {
+    color: rgb(22, 0, 83);
+    text-decoration: none;
+    font-size: 20px;
+    transition: padding 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.navtopdebug a:hover {
+    padding: 10px 15px;
+    background-color: rgb(177, 171, 255);
+    border-radius: 15px;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.welcome-text h2 {
+    font-weight: normal;
+}
