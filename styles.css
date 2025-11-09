@@ -126,14 +126,31 @@ body {
 
 
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
 
-.box{
-    display: block;
+.box {
     margin-left: auto;
-    margin-right: -20px;
+    margin-right: -50px;
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: right;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateX(-5px);
+}
+
+.box p:hover {
+    transform: translateY(-5px);
 }
 
 .box h1:hover {
@@ -162,7 +179,7 @@ table {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
+    
     border: 1px solid rgb(0, 0, 26);
     border-radius: 5px;
     background-color: rgb(243, 190, 0);
@@ -188,11 +205,16 @@ table th, table td {
     justify-content: center;
     gap: 40px;
     padding: 20px 25px;
+    max-height: 500dvh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .boxes .photo {
-    width: 60vw;
-    height: 70vw;
+    flex: 1 1 300px;
+    max-width: 400px;
+    min-width: 350px;
+    max-height: 500px;
     padding: 10px;
     background-color: rgb(25, 39, 236);
     border-radius: 20px;
@@ -201,8 +223,9 @@ table th, table td {
 
 .boxes .photo img {
     display: flex;
-    width: 50%;
-    height: 70%;
+    width: 100%;
+    height: 60%;
+    object-position: center top;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -213,7 +236,13 @@ table th, table td {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.photo#joshua img {
+    object-position: center;
+}
 
+.photo#jensen img {
+    object-position: 50% 70%;
+}
 
 
 
@@ -252,7 +281,7 @@ ul {
     background-color: rgb(29, 10, 71);
     padding: 30px;
     border-radius: 20px;
-    line-height: 1.35;
+    line-height: 1.55;
 }
 
 
@@ -322,8 +351,49 @@ footer {
         padding: 200px 10px 0 10px;
     }
 
+    .wrapper {
+        flex-direction: row;
+        gap: 40px;
+        text-align: right;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    .box {
+        text-align: right;
+        margin-right: 0px;
+        margin-left: auto;
+        max-width: 50vw;
+    }
+
+    .box h1, .box h1:hover {
+        transform: translate(-80px, 10px);
+        z-index: 10;
+        transition: transform 0.5s ease;
+    }
+
+    .box p {
+        z-index: 20;
+        box-shadow: 0 5px 15px rgba(24, 16, 2, 1);
+        transform: translateX(-0px);
+    }
+
+    .box h1:hover {
+        transform: scale(1.05);
+        transform: translate(-50px, 10px);
+    }
+
     .photo {
         max-width: 40vw;
         max-height: 40vw;
+        flex: 1 1 30%;
+        max-width: 30dvw;
+    }
+
+    .boxes {
+        gap: 40px;
+        padding: 20px 25px;
+        column-gap: px;
+        max-height: 200dvh;
     }
 }
