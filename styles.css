@@ -5,6 +5,7 @@ body {
     background-color: rgb(0, 0, 167);
     height: 100dvh;
     color: white;
+    align-items: center;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -211,7 +212,7 @@ table th, table td {
 }
 
 .boxes .photo {
-    flex: 1 1 300px;
+    flex: 1 1 350px;
     max-width: 400px;
     min-width: 350px;
     max-height: 500px;
@@ -248,6 +249,10 @@ table th, table td {
     object-position: 50% 60%;
 }
 
+.photo#nathan img {
+    object-position: 50% 10%;
+}
+
 
 
 
@@ -276,18 +281,37 @@ marquee {
     color: rgb(243, 190, 0);
 }
 
-ul {
-    width: 80%;
+ol {
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
     font-size: 15px;
     background-color: rgb(29, 10, 71);
-    padding: 30px;
+    padding: 30px 40px;
     border-radius: 20px;
     line-height: 1.55;
 }
 
+.vid {
+    text-align: center;
+    margin-bottom: 100px;
+    max-width: 100dvw;
+}
+
+.vid video {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    width: 80dvw;
+    height: auto;
+    border-radius: 20px;
+    padding: 5px;
+    border: 5px solid rgb(243, 190, 0);
+}
+
+.vid video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -401,3 +425,5 @@ footer {
         max-height: 200dvh;
     }
 }
+
+/* CREDITS: GOOGLE FONTS, W3 SCHOOLS, INSTAGRAM, YOUTUBE */
