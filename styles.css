@@ -237,11 +237,15 @@ table th, table td {
 }
 
 .photo#joshua img {
-    object-position: center;
+    object-position: 50% 30%;
 }
 
 .photo#jensen img {
     object-position: 50% 70%;
+}
+
+.photo#othniel img {
+    object-position: 50% 60%;
 }
 
 
