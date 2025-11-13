@@ -46,15 +46,11 @@ body {
     transition: padding 0.3s ease, border 0.3s ease, color 0.3s ease, transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
 }
 
-.navtop a:hover, .selected {
+.navtop a:hover {
     color: rgb(0, 3, 37);
     transform: scale(1.05);
     padding-bottom: 5px;
     border-bottom: 2px solid rgb(0, 0, 73);
-}
-
-.selected {
-    transform: scale(1);
 }
 
 
@@ -345,7 +341,6 @@ footer {
     padding: 20px 40px;
     width: 100%;
     border-top: 3px solid rgb(0, 0, 26);
-    margin-top: auto;
     transform: none;
     transform: translateX(-30px);
 }
